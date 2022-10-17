@@ -5,11 +5,11 @@ import com.uniajc.interfaces.RoomStatus;
 import java.util.Arrays;
 import java.util.List;
 
-public class Room implements RoomStatus {
+public class RoomVIP implements RoomStatus {
     private String _number_room;
     private boolean _state;
 
-    public Room(String number_room, boolean state){
+    public RoomVIP(String number_room, boolean state){
         this._number_room = number_room;
         this._state = state;
     }
@@ -17,7 +17,7 @@ public class Room implements RoomStatus {
     @Override
     public void checkOut() {
         if(this._state) {
-            List<String> message = Arrays.asList("telefono: desactivado", "temperatura: estandar", "electricidad: desconectada");
+            List<String> message = Arrays.asList("telefono: desactivado", "temperatura: estandar", "electricidad: desconectada", "5G: desactivado");
             this._state = false;
             message.stream().forEach(System.out::println);
         } else {
@@ -28,7 +28,7 @@ public class Room implements RoomStatus {
     @Override
     public void checkIn() {
         if(!_state){
-            List<String> message = Arrays.asList("telefono: activado", "temperatura: 21º", "electricidad: conectada");
+            List<String> message = Arrays.asList("telefono: activado", "temperatura: 21º", "electricidad: conectada", "5G: activado");
             this._state = true;
             this.viewState();
             message.stream().forEach(System.out::println);

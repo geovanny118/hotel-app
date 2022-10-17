@@ -1,14 +1,14 @@
 package com.uniajc.app;
 
-import com.uniajc.interfaces.States;
-import com.uniajc.models.Room;
+import com.uniajc.interfaces.RoomStatus;
+import com.uniajc.models.*;
 import java.util.Scanner;
 
 public class Hotel {
 
     public static void main(String[] args){
         System.out.println("Hotel app");
-        States room = new Room("cuarto 101", false);
+        RoomStatus room = new Room("cuarto 101", false);
 
         Scanner scanner = new Scanner(System.in);
         char option;
