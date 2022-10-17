@@ -1,0 +1,8 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïì‚Ìûÿÿÿÿ
+q	java:S116	"WRename this field "_number_room" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šæ³»ýÿÿÿÿ
+f	java:S116
+"QRename this field "_state" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÔæ©
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©Ü¯¨
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©Ü¯¨
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(£öÅ¦ýÿÿÿÿ
