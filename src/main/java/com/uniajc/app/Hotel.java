@@ -6,9 +6,10 @@ import java.util.Scanner;
 
 public class Hotel {
 
+    private static RoomStatus _room_101;
     public static void main(String[] args){
         System.out.println("Hotel app");
-        RoomStatus room = new Room("cuarto 101", false);
+        _room_101 = new Room("cuarto 101", false);
 
         Scanner scanner = new Scanner(System.in);
         char option;
@@ -20,9 +21,9 @@ public class Hotel {
             System.out.println(optionsMessage);
             option = scanner.next().charAt(0);
             switch (option){
-                case 'a': room.viewState(); break;
-                case 'b': room.checkIn(); break;
-                case 'c': room.checkOut(); break;
+                case 'a': _room_101.viewState(); break;
+                case 'b': _room_101.checkIn(); break;
+                case 'c': _room_101.checkOut(); break;
                 case 'd': running=false; break;
                 default: System.err.println("Opcion no valida "); break;
             }
